@@ -1,0 +1,43 @@
+球员出勤计数器v1.01使用说明
+
+使用方法：
+1.把xlsx除了第一行删干净（非常重要，程序不能自动更新写入xlsx的东西）
+2.将xlsx关闭（非常重要）
+3.将名单复制粘贴进入rawdata.txt
+4.运行exe文件
+5.把xlsx里面的东西剪切走
+
+注意事项：
+1.rawdata和Result的名字绝对不能更改
+2.rawdata和Result必须和exe在同一目录下，文件夹最好放英文目录，可以桌面
+3.启动exe时 result.xlsx必须关闭
+
+结果说明：
+1.结果永不重复，把一个人的所有称呼的数据加起来即为所求
+2.C/Cap./Captain会被当做姓名处理
+3.量较少的实验数据成功率为100%
+4.量大的真实数据结果就很迷，可能有误差
+
+手动修改原数据指南：
+
+Name
+Name(Name, min 10)
+Name(Name, min 10’)
+Name(Name min 10)
+以上为可行格式，Name最长有一个空格或“'”
+——————————————————————
+Name(Name 10)
+Name(Name 10’)
+Name(min 10，Name)
+Name(10，Name)
+Name(Name,min 10; Name, min20)
+Name(Name, min 10   (缺少部分括号)
+
+以上格式会导致将min作为名字或数字作为名字
+
+De La A Man
+多于两个词的名字会引发无法预料的错误
+——————————————————————
+
+作者：yhy
+2019.4.30
